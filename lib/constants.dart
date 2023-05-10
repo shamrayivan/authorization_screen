@@ -1,4 +1,4 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-TextStyle numberTextStyle = TextStyle(fontSize: 32, color: Colors.black);
+TextStyle numberTextStyle = const TextStyle(fontSize: 32, color: Colors.black);
+Color violetColor = const Color(0xFF7B61FF);
