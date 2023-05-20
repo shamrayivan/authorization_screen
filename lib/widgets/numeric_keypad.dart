@@ -19,7 +19,7 @@ class NumericKeypad extends StatelessWidget {
               children: [
                 TextButton(
                     onPressed: () {
-                      numberBloc.add(AddNumberEventOne());
+                      numberBloc.add(AddNumberEventNumber("1"));
                     },
                     child: Text('1', style: numberTextStyle)),
                 const SizedBox(
@@ -27,7 +27,7 @@ class NumericKeypad extends StatelessWidget {
                 ),
                 TextButton(
                     onPressed: () {
-                      numberBloc.add(AddNumberEventFour());
+                      numberBloc.add(AddNumberEventNumber("4"));
                     },
                     child: Text(
                       '4',
@@ -38,7 +38,7 @@ class NumericKeypad extends StatelessWidget {
                 ),
                 TextButton(
                     onPressed: () {
-                      numberBloc.add(AddNumberEventSeven());
+                      numberBloc.add(AddNumberEventNumber("7"));
                     },
                     child: Text(
                       '7',
@@ -59,7 +59,7 @@ class NumericKeypad extends StatelessWidget {
               children: [
                 TextButton(
                     onPressed: () {
-                      numberBloc.add(AddNumberEventTwo());
+                      numberBloc.add(AddNumberEventNumber("2"));
                     },
                     child: Text('2', style: numberTextStyle)),
                 const SizedBox(
@@ -67,7 +67,7 @@ class NumericKeypad extends StatelessWidget {
                 ),
                 TextButton(
                     onPressed: () {
-                      numberBloc.add(AddNumberEventFive());
+                      numberBloc.add(AddNumberEventNumber("5"));
                     },
                     child: Text(
                       '5',
@@ -78,7 +78,7 @@ class NumericKeypad extends StatelessWidget {
                 ),
                 TextButton(
                     onPressed: () {
-                      numberBloc.add(AddNumberEventEight());
+                      numberBloc.add(AddNumberEventNumber("8"));
                     },
                     child: Text(
                       '8',
@@ -89,7 +89,7 @@ class NumericKeypad extends StatelessWidget {
                 ),
                 TextButton(
                     onPressed: () {
-                      numberBloc.add(AddNumberEventZero());
+                      numberBloc.add(AddNumberEventNumber("0"));
                     },
                     child: Text(
                       '0',
@@ -101,7 +101,7 @@ class NumericKeypad extends StatelessWidget {
               children: [
                 TextButton(
                     onPressed: () {
-                      numberBloc.add(AddNumberEventThree());
+                      numberBloc.add(AddNumberEventNumber("3"));
                     },
                     child: Text('3', style: numberTextStyle)),
                 const SizedBox(
@@ -109,7 +109,7 @@ class NumericKeypad extends StatelessWidget {
                 ),
                 TextButton(
                     onPressed: () {
-                      numberBloc.add(AddNumberEventSix());
+                      numberBloc.add(AddNumberEventNumber("6"));
                     },
                     child: Text(
                       '6',
@@ -120,7 +120,7 @@ class NumericKeypad extends StatelessWidget {
                 ),
                 TextButton(
                     onPressed: () {
-                      numberBloc.add(AddNumberEventNine());
+                      numberBloc.add(AddNumberEventNumber("9"));
                     },
                     child: Text(
                       '9',

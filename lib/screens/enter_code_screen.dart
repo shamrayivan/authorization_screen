@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:sobes/color_bloc/color_bloc.dart';
 import 'package:sobes/number_bloc/number_bloc.dart';
 import 'package:sobes/widgets/button_request.dart';
 import 'package:sobes/widgets/numbers_blocks_widget.dart';
@@ -12,8 +13,15 @@ class EnterCodeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return BlocProvider<NumberBloc>(
-      create: (context) => NumberBloc(),
+    return MultiBlocProvider(
+      providers: [
+        BlocProvider<NumberBloc>(
+          create: (context) => NumberBloc(),
+        ),
+        BlocProvider<ColorBloc>(
+          create: (context) => ColorBloc(),
+        ),
+      ],
       child: Scaffold(
           backgroundColor: const Color(0xffFDFDFD),
           body: Center(
@@ -38,7 +46,7 @@ class EnterCodeScreen extends StatelessWidget {
                       const SizedBox(
                         height: 139,
                       ),
-                      const ButtonRequest(),
+                       ButtonRequest(state: state),
                       const SizedBox(
                         height: 59,
                       ),
